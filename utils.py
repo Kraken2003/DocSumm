@@ -3,7 +3,6 @@ import ocrmypdf
 import tempfile
 import os
 import fitz  
-#import time
 
 def ocr_text(pdf_path):
     fd, temp_output_path = tempfile.mkstemp(suffix=".pdf")
@@ -24,9 +23,4 @@ def conventional_text(path):
     return text
 
 
-#path = r'C:\Users\Prithvi\Desktop\PROJ2\sample.pdf'
-#start_time = time.time()
-#text = conventional_text(path)
-#end_time = time.time()
-#print(text)
-#print(f"runtime was: {end_time-start_time}") 
+ 

@@ -1,3 +1,9 @@
+# Streamlit app that allows users to upload a PDF document and ask questions about it.
+# The app uses a language model to generate answers to the user's questions based on the content of the document.
+# The app uses the Hugging Face Hub to load the language model and the Langchain library to process the document and generate answers.
+# The app also uses a history-aware retriever to take into account the chat history when generating answers.
+
+
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder

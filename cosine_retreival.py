@@ -1,3 +1,8 @@
+# This code is a Streamlit app that allows users to upload a PDF document and ask questions about it.
+# The app uses a language model to generate answers to the user's questions based on the content of the document.
+# The app uses the Hugging Face Hub to load the language model and the Langchain library to process the document and generate answers.
+
+
 from dotenv import load_dotenv
 import streamlit as st
 from utils import *

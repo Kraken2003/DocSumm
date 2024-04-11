@@ -1,3 +1,7 @@
+# Defining two functions for creating language model pipelines for document summarization and query generation.
+# The create_summ function takes a model ID as input and returns a Hugging Face pipeline for generating summaries of documents.
+# The create_query function takes a model ID as input and returns a Hugging Face pipeline for generating queries.
+
 import torch
 import transformers
 from transformers import AutoTokenizer

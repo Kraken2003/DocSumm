@@ -1,4 +1,4 @@
-# This code defines a function that creates a language model chain for document summarization.
+# A function that creates a language model chain for document summarization.
 # The function takes a model ID as input and returns a Langchain object that can be used to generate summaries of documents.
 # The function uses the Hugging Face Hub to load the language model and the Langchain library to process the document and generate summaries.
 

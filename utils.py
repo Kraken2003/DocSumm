@@ -1,3 +1,7 @@
+# Defining two functions for converting a PDF file to text and generating embeddings for the text.
+# The pdf2text function takes a PDF file as input and returns the text and chunks of the text.
+# The embeddings_from_chunks function takes chunks of text as input and returns embeddings for the chunks.
+
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS

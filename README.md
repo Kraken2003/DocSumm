@@ -12,7 +12,7 @@ DocSumQA is a user-friendly Streamlit application that empowers you to extract k
 - Ensure you have Python 3.x and pip installed.
 - Clone the Repository: Use git clone https://github.com/your-username/DocSumQA.git to clone this repository.
 - Create a Virtual Environment (Recommended): Create a virtual environment to isolate project dependencies. You can use tools like venv or conda.
-- Install Dependencies: Navigate to the project directory and run ```bash pip install``` to install the required libraries.
+- Install Dependencies: Navigate to the project directory and run ```pip install``` to install the required libraries.
 
 # Usage
 

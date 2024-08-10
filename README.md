@@ -46,10 +46,4 @@ This Streamlit application leverages Google's Gemini AI to provide a powerful do
 - PyPDF2
 - docx2txt
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

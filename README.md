@@ -1,40 +1,55 @@
-## DocSumQA: A Streamlit App for AI-Powered Document Summarization and Question Answering
+# Gemini-powered Document Q&A
 
-# Description
+This Streamlit application leverages Google's Gemini AI to provide a powerful document question-answering system. Users can upload multiple documents and engage in a conversational interface to ask questions about the content of these documents.
 
-DocSumQA is a user-friendly Streamlit application that empowers you to extract key insights and ask questions about PDF documents. It leverages the power of large language models (LLMs) to provide:
+## Features
 
-- Automatic Summarization: Generate concise summaries of uploaded PDFs, capturing the essence of the document.
-- Context-Aware Question Answering: Ask in-depth questions related to the document's content, and receive informative, contextually aware answers from the LLM.
+- Multi-document upload support (TXT, PDF, DOCX)
+- Document processing and indexing using LangChain and Chroma
+- Conversational interface powered by Google's Gemini AI
+- Retrieval-Augmented Generation (RAG) for accurate answers
 
+## Installation
 
-# Prerequisites:
-- Ensure you have Python 3.x and pip installed.
-- Clone the Repository: Use git clone https://github.com/your-username/DocSumQA.git to clone this repository.
-- Create a Virtual Environment (Recommended): Create a virtual environment to isolate project dependencies. You can use tools like venv or conda.
-- Install Dependencies: Navigate to the project directory and run ```pip install``` to install the required libraries.
+1. Clone this repository
+2. Create a virtual environment and activate it
+3. Install the required packages
+4. Create a `.env` file in the root directory and add your Gemini API key (replace the st.secrets with dotenv code snippet)
+## Usage
 
-# Usage
+1. Run the Streamlit app
 
-- Execute streamlit run app.py (or the equivalent command depending on your setup) to launch the DocSumQA app in your web browser (usually at http://localhost:8501).
-- Upload a PDF: Click the "Upload the document" button and select the PDF file you want to analyze.
+2. Open your web browser and go to the URL provided by Streamlit (usually `http://localhost:8501`).
 
-# Summarization
+3. Upload one or more documents using the file uploader.
 
-After uploading the PDF, DocSumQA will automatically generate a summary of the document's content.
-Question Answering
+4. Wait for the documents to be processed and indexed.
 
-- In the text input field, type your question about the document.
-- Ensure your question is related to the document's content.
-- Click "Enter" to submit your question.
-- DocSumQA will process your question using the LLM and the document context to provide an informative answer.
-- You can ask multiple questions to delve deeper into the document.
+5. Start asking questions about the uploaded documents in the chat interface.
 
-# Customization (Optional)
+## How it Works
 
-- This repository provides the groundwork for customization. You can experiment with different LLM models (see the model_id variables in app.py and model.py) to explore their capabilities.
-- Refer to the documentation of the Langchain and Hugging Face libraries for further customization options.
+1. Document Upload: The app accepts multiple document uploads (TXT, PDF, DOCX).
+2. Processing: Uploaded documents are processed and text is extracted.
+3. Indexing: The extracted text is split into chunks and indexed using Chroma vector store.
+4. Question-Answering: When a user asks a question, the app retrieves relevant context from the indexed documents.
+5. Gemini AI: The question and retrieved context are sent to Gemini AI for generating an accurate answer.
+6. Response: The AI-generated answer is displayed to the user in a conversational interface.
 
-# Contributing
+## Dependencies
 
-We welcome contributions to this project! Feel free to create a pull request on GitHub if you have improvements or suggestions. Make sure to follow our contribution guidelines (if any).
+- streamlit
+- google-generativeai
+- python-dotenv
+- langchain
+- chromadb
+- PyPDF2
+- docx2txt
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

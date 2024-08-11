@@ -76,7 +76,7 @@ def process_documents(uploaded_files):
     return vectorstore
 
 # Streamlit UI
-st.title("Document Q&A with Gemini")
+st.title("RaDoG - Your Personalized AI Chatbot")
 
 # File uploader
 uploaded_files = st.file_uploader("Upload one or more documents", accept_multiple_files=True)

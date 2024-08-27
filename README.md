@@ -22,7 +22,7 @@ graph LR
     A["User Interface (Streamlit)"] --> B{"File Upload"}
     B --> C["Document Processing"]
     C --> D["Chroma Vectorstore"]
-    C --> E["Google Generative AI"]
+    D --> E["Google Generative AI"]
     E --> F["Chatbot Response"]
     F --> A
 ```
